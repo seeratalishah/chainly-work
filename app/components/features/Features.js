@@ -30,9 +30,17 @@ const FeatureCards = [
   
 
 const Features = () => {
+  const h1Style = {
+    textAlign: "center",
+    fontFamily: 'GilroyBold',
+    fontSize: "58px",
+    fontStyle: "normal",
+    fontWeight: 900,
+    lineHeight: "78px",
+  };
   return (
     <div className="p-8">
-      <h1 className="text-center text-4xl font-bold mb-6">Why Chainly.work is Your Ultimate Freelancing Solution</h1>
+      <h1 style={h1Style} className="text-center text-4xl font-bold mb-6">Why Chainly.work is Your Ultimate Freelancing Solution</h1>
       <div class="grid grid-cols-4 gap-4">
         {
             FeatureCards.map((card) => <Card data={card} />)
