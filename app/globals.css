@@ -1,19 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @font-face {
-  font-family: 'GilroyBold';
-  src: url('/assets/gilroy/Gilroy-Bold.ttf') format('ttf'),
+  font-family: GilroyBold;
+  src: url("/assets/gilroy/Gilroy-Bold.ttf") format("truetype");
 }
 
-p, span{
+p,
+span {
   font-family: "Quicksand", sans-serif !important;
 }
-h1, h2 {
-  font-family: 'GilroyBold', sans-serif !important;
+h1,
+h2 {
+  font-family: GilroyBold !important;
 }
-p{
+p {
   margin-top: 0 !important;
+}
+
+.light body {
+  background: url(/light-bg.jpeg);
+}
+
+.dark body {
+  background: url(/BG.jpg);
+}
+
+.whyUsCard {
+  border-radius: 13.021px;
+  border: 0.868px solid #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14.757596015930176px);
 }
