@@ -10,7 +10,7 @@ const BulletPoint = ({ text }) => (
 
 const Card = ({ data }) => {
   return (
-    <div className="col-span-1 border border-gray rounded-md p-4">
+    <div className="col-span-1 border border-gray rounded-xl p-4">
       <p className="text-md font-bold mb-4">{data.title}</p>
       <div>
         {data.bulletPoints.map((point, index) => (

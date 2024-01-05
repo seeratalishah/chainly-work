@@ -1,0 +1,9 @@
+.darkNav{
+    background-color: #1C1F26;
+    z-index: 10;
+}
+
+.lightNav{
+    background-color: #F8F8F8 !important;
+    z-index: 10;
+}

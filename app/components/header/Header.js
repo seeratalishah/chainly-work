@@ -9,6 +9,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdWbSunny } from "react-icons/md";
 
 import "./header.css";
+import DropdownButton from "../common/DropdownButton";
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
@@ -28,13 +29,15 @@ const Header = () => {
   };
 
   return (
-    <div className="header fixed top-0 z-10 w-full flex items-center justify-between p-8 dark:bg-black opacity-90">
-      <h1 className="text-xl font-bold">Chainly.work</h1>
+    <div className={`${theme === "dark" ? "darkNav" : "lightNav"} fixed top-0 z-10 w-full flex items-center justify-between px-8 py-4`}>
+      <img src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"} alt="logo" />
       <div className="flex items-center space-x-5 text-xs">
         <ul className="flex items-center space-x-10">
           <li>
             <Link href="/">Home</Link>
           </li>
+          <li><DropdownButton title="Browse Jobs" /></li>
+          <li><DropdownButton title="Chainly Pro" /></li>
           <li>
             <Link href="/seller">Become a seller</Link>
           </li>
@@ -42,10 +45,10 @@ const Header = () => {
       </div>
       <div className="flex items-center space-x-5 text-xs">
         <div className="space-x-3">
-          <button className="bg-white text-black px-5 py-2 rounded font-bold">
-            Sign In
+          <button className="border px-5 py-2 rounded font-bold dark:border-white border-black">Sign In</button>
+          <button className="dark:bg-white dark:text-black bg-black text-white px-5 py-2 rounded font-bold">
+            Join
           </button>
-          <button className="border px-5 py-2 rounded font-bold">Join</button>
         </div>
         <div
           className="relative w-16 h-8 flex items-center dark:bg-black bg-white cursor-pointer rounded-full p-1"

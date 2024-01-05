@@ -4,8 +4,8 @@ const MarketResearch = () => {
   return (
     <div className="flex items-center p-8">
       <div style={{ width: "50%" }}>
-        <h1 className="text-xl font-bold mb-4">Market Research</h1>
-        <p className="text-md">
+        <h1 className="text-4xl font-bold mb-4">Market Research</h1>
+        <p className="text-sm">
           45% of freelancers work with at least one other freelancer frequently
           according to a study by Hubstaff. This illustrates that a significant
           share of freelancers already regularly collaborate. Over 90% of large

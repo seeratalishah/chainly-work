@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import { FaTiktok, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 
@@ -244,8 +246,9 @@ const solutionsLinks = [
 ];
 
 const Footer = () => {
+    const {theme, setTheme} = useTheme()
   return (
-    <div className="footer p-8">
+    <div className="footer p-8 mt-10">
       <div className="website-links flex justify-between space-x-10">
         <div className="links-container flex flex-col space-y-4 text-xs">
           <span className="text-lg font-bold">Categoires</span>
@@ -299,7 +302,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="social-links flex items-center justify-between pt-4 border-t-2 border-solid border-grey mt-4">
-        <div className="flex items-center space-x-10"><h1 className="text-xl font-bold">Chainly.work</h1><p>© Chainly International Ltd. 2023</p></div>
+        <div className="flex items-center space-x-10"><img src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"} alt="logo"/><p>© Chainly International Ltd. 2023</p></div>
         <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-4"><FaTiktok size={18} /><FaFacebook size={18}/><FaLinkedin size={18}/><FaInstagram size={18}/></div>
             <div class="h-7 border-l-2 border-solid border-grey"></div>

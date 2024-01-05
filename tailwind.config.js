@@ -11,6 +11,9 @@ module.exports = {
       '500': '500px',
     },
     extend: {
+      boxShadow: {
+        'sm': '1px 1px 3px 1px rgba(0, 0, 0, 0.05)',
+      },
     },
   },
   plugins: [],

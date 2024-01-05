@@ -46,7 +46,7 @@ const whyUsCards = [
 const WhyUs = () => {
   return (
     <div className="p-8">
-      <h1 className="text-center text-xl font-bold mb-6">Why Us</h1>
+      <h1 className="text-center text-4xl font-bold mb-6">Why Us</h1>
       <div class="grid grid-cols-3 gap-4">
         {
             whyUsCards.map((card) => <Card data={card} />)

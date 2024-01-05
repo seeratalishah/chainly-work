@@ -10,6 +10,7 @@ import WhyUs from "./components/whyUs/WhyUs";
 export default function Home() {
   return (
     <Layout>
+      <div className="flex flex-col space-y-10">
       <HeroSection />
       <WhyUs />
       <Features />
@@ -18,6 +19,7 @@ export default function Home() {
       <TargetMarket />
       <WebThreeIntegration />
       <Team />
+      </div>
     </Layout>
   );
 }

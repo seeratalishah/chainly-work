@@ -6,8 +6,8 @@ const TargetMarket = () => {
     <div className="flex items-center p-8">
       <img src="/targetMarket.png" alt="image" style={{ width: "50%" }} />
       <div style={{ width: "50%" }}>
-        <h1 className="text-xl font-bold">Target Market</h1>
-        <h1 className="text-xl font-bold mb-4">(Business)</h1>
+        <h1 className="text-4xl font-bold">Target Market</h1>
+        <h1 className="text-4xl font-bold mb-4">(Business)</h1>
         <p className="text-xs bullet-point">Businesses with long-term projects.</p>
         <p className="text-xs bullet-point">
           Startups and small businesses requiring flexible workforce solutions.

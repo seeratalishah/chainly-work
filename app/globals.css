@@ -2,4 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('/assets/gilroy/Gilroy-Bold.ttf') format('ttf'),
+}
 
+p, span{
+  font-family: "Quicksand", sans-serif !important;
+}
+h1, h2 {
+  font-family: 'GilroyBold', sans-serif !important;
+}
+p{
+  margin-top: 0 !important;
+}
