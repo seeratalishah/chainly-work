@@ -3,6 +3,7 @@ import HeroSection from "./components/heroSection/HeroSection";
 import Layout from "./components/layout/Layout";
 import MarketOverview from "./components/marketOverview/MarketOverview";
 import MarketResearch from "./components/marketResearch/MarketResearch";
+import RoadMap from "./components/roadmap/roadMap";
 import TargetMarket from "./components/targetMarket/TargetMarket";
 import Team from "./components/team/Team";
 import WebThreeIntegration from "./components/webThreeIntegration/WebThreeIntegration";
@@ -21,6 +22,7 @@ export default function Home() {
           <TargetMarket />
           <WebThreeIntegration />
           <Team />
+          <RoadMap />
         </div>
       </div>
     </Layout>

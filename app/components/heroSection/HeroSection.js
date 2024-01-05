@@ -1,16 +1,16 @@
-"use client"
+"use client";
 import React from "react";
 import { useTheme } from "next-themes";
 import "./heroSection.css";
 
 const HeroSection = () => {
-    const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="hero-section relative">
       <div className="w-full h-full">
         <img
-          src="/hero.png"
+          src={`${theme == "light" ? "/lightHero.png" : "/hero.png"}`}
           alt="hero half shadow"
           className="w-full h-full object-cover"
         />
@@ -34,9 +34,16 @@ const HeroSection = () => {
             Login
           </button>
         </div>
-        <p className="mb-4 text-xs">Designer,Developer,Web,IOS,PHP,Senior,Engineer</p>
+        <p className="mb-4 text-xs">
+          Designer,Developer,Web,IOS,PHP,Senior,Engineer
+        </p>
         <p className="mb-6 text-xs">Trust by the world's best</p>
-        <img src={theme === "dark" ? "/darkText.png" : "/lightText.png"} alt="logo" height={30} width={600}/>
+        <img
+          src={theme === "dark" ? "/darkText.png" : "/lightText.png"}
+          alt="logo"
+          height={30}
+          width={600}
+        />
       </div>
     </div>
   );
