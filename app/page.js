@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col space-y-10">
-      <HeroSection />
-      <WhyUs />
-      <Features />
-      <MarketOverview />
-      <MarketResearch />
-      <TargetMarket />
-      <WebThreeIntegration />
-      <Team />
+        <HeroSection />
+        <WhyUs />
+        <Features />
+        <MarketOverview />
+        <MarketResearch />
+        <TargetMarket />
+        <WebThreeIntegration />
+        <Team />
       </div>
     </Layout>
   );
