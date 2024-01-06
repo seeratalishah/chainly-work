@@ -19,10 +19,10 @@ const Card = ({ data }) => {
         />
       </div>
       <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col p-5 gap-4">
-        <div className="text-xl">{data.title}</div>
+        <div className="text-md">{data.title}</div>
         <div className="flex flex-col gap-1">
           {data.bulletPoints.map((item) => (
-            <div className="text-[#3EB0FF] text-lg">{item}</div>
+            <div className="text-[#3EB0FF] text-sm">{item}</div>
           ))}
         </div>
       </div>
