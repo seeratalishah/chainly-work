@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: GilroyBold;
-  src: url("/assets/gilroy/Gilroy-Bold.ttf") format("truetype");
+  src: url("/Gilroy-Bold.ttf") format("truetype");
   background-size: cover;
 }
 
-p,
-span {
+
+.font-Quicksand {
   font-family: "Quicksand", sans-serif !important;
 }
 h1,
@@ -23,10 +23,12 @@ p {
 
 .light body {
   background: url(/light-bg.jpeg);
+  background-size: cover;
 }
 
 .dark body {
   background: url(/BG.jpg);
+  background-size: cover;
 }
 
 .whyUsCard {
@@ -47,4 +49,16 @@ p {
 
 .banner-desc{
   width: 330px;
+}
+
+.bullet-point::before {
+  content: "•";  /* Unicode for a bullet point */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 2em; /* Adjust the font-size as needed for the bullet point size */
+  margin-left: -1em;
+  margin-right: 0.1em; /* Adjust as needed */
+  color: #ffffff; /* Color of the bullet point */
+  vertical-align: middle; /* Align the bullet point with the text */
 }

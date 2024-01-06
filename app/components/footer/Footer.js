@@ -319,7 +319,7 @@ const Footer = () => {
             <FaLinkedin size={18} />
             <FaInstagram size={18} />
           </div>
-          <div class="h-7 border-l-2 border-solid border-grey"></div>
+          <div className="h-7 border-l-2 border-solid border-grey"></div>
           <div className="flex items-center space-x-4">
             <TbWorld size={18} />
             <span>English</span>

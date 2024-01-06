@@ -39,9 +39,9 @@ const Features = () => {
     lineHeight: "78px",
   };
   return (
-    <div className="p-8">
+    <div className="p-8  my-12">
       <h1 style={h1Style} className="text-center text-4xl font-bold mb-6">Why Chainly.work is Your Ultimate Freelancing Solution</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {
             FeatureCards.map((card) => <Card data={card} />)
         }
