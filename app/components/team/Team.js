@@ -30,10 +30,10 @@ const teamCards = [
 
 const Team = () => {
   return (
-    <div className="p-8">
+    <div className="p-8  my-12">
       <h1 className="text-center text-4xl font-bold mb-6">Team-Building Feature</h1>
-      <p className="text-center text-xs mb-7">Build Successful Project Teams with Smart Contracts and Collaborations Tools.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <p className="text-center text-[16px] font-thin mb-7">Build Successful Project Teams with Smart Contracts and Collaborations Tools.</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {
             teamCards.map((card) => <Card data={card} />)
         }

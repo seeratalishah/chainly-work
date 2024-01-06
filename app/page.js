@@ -6,6 +6,7 @@ import MarketResearch from "./components/marketResearch/MarketResearch";
 import RoadMap from "./components/roadmap/roadMap";
 import Slider from "./components/slider/Slider";
 import TargetMarket from "./components/targetMarket/TargetMarket";
+import TargetFreelance from "./components/targetMarketFreelance/TargetFreelance";
 import Team from "./components/team/Team";
 import WebThreeIntegration from "./components/webThreeIntegration/WebThreeIntegration";
 import WhyUs from "./components/whyUs/WhyUs";
@@ -13,14 +14,15 @@ import WhyUs from "./components/whyUs/WhyUs";
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-10 ">
         <HeroSection />
-        <div class="container mx-auto">
+        <div className="container mx-auto">
           <WhyUs />
           <Features />
           <MarketOverview />
           <MarketResearch />
           <TargetMarket />
+          <TargetFreelance />
           <WebThreeIntegration />
           <Team />
           <RoadMap />
