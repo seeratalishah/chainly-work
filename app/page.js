@@ -15,7 +15,6 @@ import WhyUs from "./components/whyUs/WhyUs";
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col space-y-10 ">
         <HeroSection />
         <div class="container mx-auto flex flex-col space-y-10">
         <div className="container mx-auto">

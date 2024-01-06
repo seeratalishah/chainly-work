@@ -1,6 +1,9 @@
+"use client"
+import { useTheme } from "next-themes";
 import React from "react";
 
 const MarketOverview = () => {
+    const {theme, setTheme} = useTheme();
   return (
     <div className="flex flex-col space-y-10 p-8  my-12">
       <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row">
@@ -28,13 +31,13 @@ const MarketOverview = () => {
       <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row">
         <img
           className="w-full h-full lg:w-1/2 md:w-1/2 sm:w-1/2"
-          src="/graph1.png"
+          src={`${theme === "dark" ? "/graph1.png" : "/graphLight1.png"}`}
           alt="graph"
           
         />
         <img
           className="w-full h-full lg:w-1/2 md:w-1/2 sm:w-1/2"
-          src="/graph2.png"
+          src={`${theme === "dark" ? "/graph2.png" : "/graphLight2.png"}`}
           alt="graph"
         />
       </div>

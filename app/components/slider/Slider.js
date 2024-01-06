@@ -20,6 +20,7 @@ const Slider = () => {
     <div className="container mx-auto mt-8  my-12">
       <SliderCard slides={slides} />
     </div>
+    </div>
   );
 };
 
