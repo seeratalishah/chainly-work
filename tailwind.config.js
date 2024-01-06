@@ -7,6 +7,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: []
+    },
     maxWidth: {
       '500': '500px',
     },

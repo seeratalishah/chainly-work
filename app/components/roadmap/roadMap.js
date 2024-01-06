@@ -36,9 +36,9 @@ const webThreeCards = [
 
 const RoadMap = () => {
   return (
-    <div className="p-8">
+    <div className="p-8  my-12">
       <h1 className="text-4xl font-bold mb-6">Roadmap</h1>
-      <div class="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-5 gap-4">
         {webThreeCards.map((card) => (
           <Card data={card} />
         ))}
