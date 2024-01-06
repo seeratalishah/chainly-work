@@ -17,6 +17,9 @@ module.exports = {
       boxShadow: {
         'sm': '1px 1px 3px 1px rgba(0, 0, 0, 0.05)',
       },
+      colors: {
+        "slideBG": "#14141F",
+      }
     },
   },
   plugins: [],

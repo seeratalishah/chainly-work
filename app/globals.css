@@ -38,6 +38,19 @@ p {
   backdrop-filter: blur(14.757596015930176px);
 }
 
+.banner-font{
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner-text{
+  width: 380px;
+  font-family: GilroyBold !important;
+}
+
+.banner-desc{
+  width: 330px;
+}
+
 .bullet-point::before {
   content: "•";  /* Unicode for a bullet point */
   display: inline-block;

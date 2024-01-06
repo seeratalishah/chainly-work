@@ -1,4 +1,5 @@
 import Features from "./components/features/Features";
+import FindWork from "./components/findWork/FindWork";
 import HeroSection from "./components/heroSection/HeroSection";
 import Layout from "./components/layout/Layout";
 import MarketOverview from "./components/marketOverview/MarketOverview";
@@ -14,8 +15,8 @@ import WhyUs from "./components/whyUs/WhyUs";
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col space-y-10 ">
         <HeroSection />
+        <div class="container mx-auto flex flex-col space-y-10">
         <div className="container mx-auto">
           <WhyUs />
           <Features />
@@ -27,6 +28,7 @@ export default function Home() {
           <Team />
           <RoadMap />
           <Slider />
+          <FindWork />
         </div>
       </div>
     </Layout>
