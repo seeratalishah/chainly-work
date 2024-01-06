@@ -6,6 +6,7 @@
 @font-face {
   font-family: GilroyBold;
   src: url("/assets/gilroy/Gilroy-Bold.ttf") format("truetype");
+  background-size: cover;
 }
 
 p,

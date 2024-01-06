@@ -3,9 +3,9 @@ import "./targetMarket.css";
 
 const TargetMarket = () => {
   return (
-    <div className="flex items-center p-8">
-      <img src="/targetMarket.png" alt="image" style={{ width: "50%" }} />
-      <div style={{ width: "50%" }}>
+    <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row items-center p-8">
+      <img src="/targetMarket.png" alt="image" className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2"/>
+      <div className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2">
         <h1 className="text-4xl font-bold">Target Market</h1>
         <h1 className="text-4xl font-bold mb-4">(Business)</h1>
         <p className="text-[18px] bullet-point leading-[28px] ml-10">Businesses with long-term projects.</p>

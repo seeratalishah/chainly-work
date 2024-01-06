@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -246,10 +246,10 @@ const solutionsLinks = [
 ];
 
 const Footer = () => {
-    const {theme, setTheme} = useTheme()
+  const { theme, setTheme } = useTheme();
   return (
-    <div className="footer p-8 mt-10">
-      <div className="website-links flex justify-between space-x-10">
+    <div className="footer p-8 mt-10 flex flex-col space-y-10">
+      <div className="website-links grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         <div className="links-container flex flex-col space-y-4 text-xs">
           <span className="text-lg font-bold">Categoires</span>
           {categoriesLinks.map((item) => {
@@ -301,12 +301,29 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="social-links flex items-center justify-between pt-4 border-t-2 border-solid border-grey mt-4">
-        <div className="flex items-center space-x-10"><img src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"} alt="logo"/><p>© Chainly International Ltd. 2023</p></div>
-        <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-4"><FaTiktok size={18} /><FaFacebook size={18}/><FaLinkedin size={18}/><FaInstagram size={18}/></div>
-            <div class="h-7 border-l-2 border-solid border-grey"></div>
-            <div className="flex items-center space-x-4"><TbWorld size={18}/><span>English</span></div>
+      <div className="social-links flex flex-col lg:flex-row items-center justify-between pt-4 border-t-2 border-solid border-grey mt-4">
+        <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10 order-2 lg:order-1">
+          <img
+            className="sm:order-1 md:order-1 lg:order-1 order-2 mt-4 lg:mt-0 sm:mt-0 md:mt-0"
+            src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
+            alt="logo"
+          />
+          <p className="sm:order-2 md:order-2 lg:order-2 order-1">
+            © Chainly International Ltd. 2023
+          </p>
+        </div>
+        <div className="flex items-center space-x-6 mb-4 lg:mb-0">
+          <div className="flex items-center space-x-4">
+            <FaTiktok size={18} />
+            <FaFacebook size={18} />
+            <FaLinkedin size={18} />
+            <FaInstagram size={18} />
+          </div>
+          <div class="h-7 border-l-2 border-solid border-grey"></div>
+          <div className="flex items-center space-x-4">
+            <TbWorld size={18} />
+            <span>English</span>
+          </div>
         </div>
       </div>
     </div>

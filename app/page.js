@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import MarketOverview from "./components/marketOverview/MarketOverview";
 import MarketResearch from "./components/marketResearch/MarketResearch";
 import RoadMap from "./components/roadmap/roadMap";
+import Slider from "./components/slider/Slider";
 import TargetMarket from "./components/targetMarket/TargetMarket";
 import Team from "./components/team/Team";
 import WebThreeIntegration from "./components/webThreeIntegration/WebThreeIntegration";
@@ -23,6 +24,7 @@ export default function Home() {
           <WebThreeIntegration />
           <Team />
           <RoadMap />
+          <Slider />
         </div>
       </div>
     </Layout>

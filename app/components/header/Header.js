@@ -81,10 +81,10 @@ const Header = () => {
 
       <div className="flex items-center space-x-5 text-md">
         <div className="space-x-3">
-          <button className="border px-8 py-3 rounded-lg font-light dark:border-white border-black">
+          <button className="border px-8 py-3 rounded-lg font-light dark:border-white border-black cursor-pointer">
             Sign In
           </button>
-          <button className="dark:bg-white dark:text-black bg-black text-white px-8 py-3 rounded-lg font-light">
+          <button className="dark:bg-white dark:text-black bg-black text-white px-8 py-3 rounded-lg font-light cursor-pointer">
             Join
           </button>
         </div>

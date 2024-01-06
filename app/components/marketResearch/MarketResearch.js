@@ -2,8 +2,8 @@ import React from "react";
 
 const MarketResearch = () => {
   return (
-    <div className="flex items-center p-8">
-      <div style={{ width: "50%" }}>
+    <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row items-center p-8">
+      <div className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2">
         <h1 className="text-4xl font-bold mb-4">Market Research</h1>
         <p className="text-[18px] leading-[28px]">
           45% of freelancers work with at least one other freelancer frequently
@@ -16,7 +16,7 @@ const MarketResearch = () => {
           years.
         </p>
       </div>
-      <img src="/marketResearch.png" alt="image" style={{ width: "50%" }} />
+      <img src="/marketResearch.png" alt="image" className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2" />
     </div>
   );
 };

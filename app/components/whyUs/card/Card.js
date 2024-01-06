@@ -24,7 +24,7 @@ const Card = ({ data }) => {
   return (
     <div
       className={`min-h-[320px] ${
-        data.key === "05" ? "col-span-2" : "col-span-1"
+        data.key === "05" ? "col-span-1 lg:col-span-2 md:col-span-2" : "col-span-1"
       } p-4 border border-solid border-grey rounded-xl transition-all cursor-pointer shadow-sm ${
         isHovered ? "bg-gradient-to-br from-blue-500 to-purple-500" : ""
       }`}
