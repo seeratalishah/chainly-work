@@ -302,13 +302,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="social-links flex flex-col lg:flex-row items-center justify-between pt-4 border-t-2 border-solid border-grey mt-4">
-        <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10 order-2 lg:order-1">
+        <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10  ">
           <img
-            className="sm:order-1 md:order-1 lg:order-1 order-2 mt-4 lg:mt-0 sm:mt-0 md:mt-0"
+            className=" mt-4 lg:mt-0 sm:mt-0 md:mt-0"
             src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
             alt="logo"
           />
-          <p className="sm:order-2 md:order-2 lg:order-2 order-1">
+          <p >
             © Chainly International Ltd. 2023
           </p>
         </div>

@@ -3,91 +3,76 @@ import DetailsCard from "../detailsCard/DetailsCard";
 const FeatureCards = [
   {
     key: "1",
-    title: "Product Enhancement:",
-    bulletPoints: [
+    title1: "Product Enhancement:",
+    bulletPoints1: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
+    ],
+    title2: "Product Enhancement:",
+    bulletPoints2: [
       "UI/UX improvements based on initial user feedback.",
       "Testing and implementation of additional features.",
     ],
   },
   {
     key: "2",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
+    title1: "Product Enhancement:",
+    bulletPoints1: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
+    ],
+    title2: "Product Enhancement:",
+    bulletPoints2: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
     ],
   },
   {
     key: "3",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
+    title1: "Product Enhancement:",
+    bulletPoints1: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
+    ],
+    title2: "Product Enhancement:",
+    bulletPoints2: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
     ],
   },
   {
     key: "4",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
+    title1: "Product Enhancement:",
+    bulletPoints1: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
+    ],
+    title2: "Product Enhancement:",
+    bulletPoints2: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
     ],
   },
   {
     key: "5",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
+    title1: "Product Enhancement:",
+    bulletPoints1: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
     ],
-  },
-  {
-    key: "6",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
-    ],
-  },
-  {
-    key: "7",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
-    ],
-  },
-  {
-    key: "8",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
-    ],
-  },
-  {
-    key: "9",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
-    ],
-  },
-  {
-    key: "10",
-    title: "Marketing Kickoff:",
-    bulletPoints: [
-      "Launch of targeted marketing campaigns.",
-      "Community engagement initiatives.",
+    title2: "Product Enhancement:",
+    bulletPoints2: [
+      "UI/UX improvements based on initial user feedback.",
+      "Testing and implementation of additional features.",
     ],
   },
 ];
 
-const RoadOne = () => {
+const RoadOne = ({ currentStep }) => {
   return (
     <div className="grid grid-cols-5 gap-4 gap-y-1 mt-4">
-      {FeatureCards.map((card) => (
-        <DetailsCard data={card} />
+     {FeatureCards.slice(0, currentStep + 1).map((card) => (
+        <DetailsCard key={card.key} data={card} />
       ))}
     </div>
   );

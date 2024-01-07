@@ -8,20 +8,20 @@ const Timeline = () => {
   const [current, setCurrent] = useState(0);
   const steps = [
     {
-      content: <RoadOne />,
+      content: <RoadOne currentStep={0} />,
     },
     {
-      content: <RoadOne />,
+      content: <RoadOne currentStep={1} />,
     },
     {
-      content: <RoadOne />,
+      content: <RoadOne currentStep={2} />,
     },
     {
-        content: <RoadOne />,
-      },
-      {
-        content: <RoadOne />,
-      },
+      content: <RoadOne currentStep={3} />,
+    },
+    {
+      content: <RoadOne currentStep={4} />,
+    },
   ];
 
   const handleDotClick = (step) => {
@@ -45,3 +45,4 @@ const customDot = (dot, _) => (
 );
 
 export default Timeline;
+

@@ -15,22 +15,20 @@ import WhyUs from "./components/whyUs/WhyUs";
 export default function Home() {
   return (
     <Layout>
-        <HeroSection />
-        <div class="container mx-auto flex flex-col space-y-10">
-        <div className="container mx-auto">
-          <WhyUs />
-          <Features />
-          <MarketOverview />
-          <MarketResearch />
-          <TargetMarket />
-          <TargetFreelance />
-          <WebThreeIntegration />
-          <Team />
-          <RoadMap />
-          <Slider />
-          <FindWork />
-        </div>
+      <HeroSection />
+      <div class="container mx-auto flex flex-col space-y-10">
+        <WhyUs />
+        <Features />
+        <MarketOverview />
+        <MarketResearch />
+        <TargetMarket />
+        <TargetFreelance />
+        <WebThreeIntegration />
+        <Team />
+        <RoadMap />
+        <Slider />
       </div>
+      <FindWork />
     </Layout>
   );
 }

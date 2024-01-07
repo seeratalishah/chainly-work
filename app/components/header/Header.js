@@ -3,8 +3,6 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import MenuBar from "../menuBar/MenuBar";
-import { Button } from "antd";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdWbSunny } from "react-icons/md";
 

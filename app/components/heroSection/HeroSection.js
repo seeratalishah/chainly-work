@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1 className="font-['GilroyBold'] text-[40px] mb-4">
             Join us & Explore Thousands of Freelancers
           </h1>
-          <p className="font-Quicksand font-thin mb-4">
+          <p className="font-quicksand font-thin mb-4">
             Work with talented people at the most affordable price to get the
             most out of your time and cost
           </p>
@@ -27,7 +27,7 @@ const HeroSection = () => {
             Log in
           </button>
         </div>
-        <p className="mb-6 font-Quicksand font-thin">
+        <p className="mb-6 font-quicksand font-thin">
           Designer,Developer,Web,IOS,PHP,Senior,Engineer
         </p>
         <p className="mb-6 text-xs">Trust by the world's best</p>

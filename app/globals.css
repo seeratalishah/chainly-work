@@ -1,18 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @font-face {
   font-family: GilroyBold;
   src: url("/Gilroy-Bold.ttf") format("truetype");
-  background-size: cover;
 }
+@font-face {
+  font-family: GilroyMedium;
+  src: url("/Gilroy-Medium.ttf") format("truetype");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
-.font-Quicksand {
-  font-family: "Quicksand", sans-serif !important;
-}
+
 h1,
 h2 {
   font-family: GilroyBold !important;
@@ -38,12 +40,12 @@ p {
   backdrop-filter: blur(14.757596015930176px);
 }
 
-.banner-font{
+/* .banner-font{
   font-family: "Quicksand", sans-serif;
-}
+} */
 
 .banner-text{
-  width: 380px;
+  width: 70%;
   font-family: GilroyBold !important;
 }
 
@@ -61,4 +63,10 @@ p {
   margin-right: 0.1em; /* Adjust as needed */
   color: #ffffff; /* Color of the bullet point */
   vertical-align: middle; /* Align the bullet point with the text */
+}
+
+.slick-prev, .slick-next{
+  width: 57px!important;
+    height: 57px!important;
+    z-index: 10;
 }
