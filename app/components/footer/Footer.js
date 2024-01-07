@@ -302,17 +302,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="social-links flex flex-col lg:flex-row items-center justify-between pt-4 border-t-2 border-solid border-grey mt-4">
-        <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10  ">
+        <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10 lg:order-1 order-2">
           <img
-            className=" mt-4 lg:mt-0 sm:mt-0 md:mt-0"
+            className=" mt-4 lg:mt-0 sm:mt-0 md:mt-0 lg:order-1 md:order-1 sm:order-1 order-2"
             src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
             alt="logo"
           />
-          <p >
+          <p className="lg:order-2 md:order-2 sm:order-2 order-1">
             © Chainly International Ltd. 2023
           </p>
         </div>
-        <div className="flex items-center space-x-6 mb-4 lg:mb-0">
+        <div className="flex items-center space-x-6 mb-4 lg:mb-0 lg:order-2 order-1">
           <div className="flex items-center space-x-4">
             <FaTiktok size={18} />
             <FaFacebook size={18} />

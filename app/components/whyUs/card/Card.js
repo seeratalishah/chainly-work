@@ -24,10 +24,10 @@ const Card = ({ data }) => {
   const updateTheme =
     theme === "dark"
       ? data.key === "05"
-        ? "col-span-2  bg-[url('/whyusRectangle2.png')] bg-cover"
+        ? "col-span-1 md:col-span-2 lg:col-span-2  bg-[url('/whyusRectangle2.png')] bg-cover"
         : "col-span-1  bg-[url('/whyusRectangle.png')] bg-cover"
       : data.key === "05"
-      ? "col-span-2 border border-solid border-grey rounded-xl"
+      ? "col-span-1 md:col-span-2 lg:col-span-2 border border-solid border-grey rounded-xl"
       : "col-span-1 border border-solid border-grey rounded-xl";
 
   return (
