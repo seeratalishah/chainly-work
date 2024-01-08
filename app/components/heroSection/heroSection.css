@@ -3,9 +3,9 @@
 .light .hero-section {
     position: relative;
     height: 100vh;
-    background: url(/lightHero.png);
+    background: url(/hero.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -14,9 +14,9 @@
 .dark .hero-section {
     position: relative;
     height: 100vh;
-    background: url(/hero2.png);
+    background: url(/hero.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content:center;
     align-items:center;
