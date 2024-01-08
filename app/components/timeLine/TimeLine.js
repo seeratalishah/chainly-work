@@ -13,7 +13,7 @@ const Timeline = () => {
     return(
       setSize(sizeTest?.width)
     )
-  }, [sizeTest]);
+  }, [sizeTest?.width]);
   const {theme, setTheme} = useTheme();
   const [direction, setDirection] = useState("vertical");
   const [verticle, setVerticle] = useState(false);
