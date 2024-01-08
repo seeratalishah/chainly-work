@@ -84,7 +84,7 @@ const Timeline = () => {
 };
 
 const customDot = (dot, _) => (
-  <div onClick={() => dot.onClick()} className="outer-dot">
+  <div onClick={dot.onClick} className="outer-dot">
     <div className="custome-dot"></div>
   </div>
 );
