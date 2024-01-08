@@ -10,44 +10,59 @@ const Timeline = () => {
   let sizeTest = useWindowSize();
   const [size, setSize] = useState(0);
   useEffect(() => {
-    return(
-      setSize(sizeTest?.width)
-    )
+    return setSize(sizeTest?.width);
   }, [sizeTest?.width]);
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
   const [direction, setDirection] = useState("vertical");
   const [verticle, setVerticle] = useState(false);
-
   useEffect(() => {
-    return () => {
-      setDirection(size < 1024 ? "vertical" : "horizontal")
-      setVerticle(size < 1024 ? true : false)
-    };
+    setDirection(size < 1024 ? "vertical" : "horizontal");
+    setVerticle(size < 1024 ? true : false);
   }, [size]);
   const steps = [
     {
       content: <RoadOne currentStep={0} />,
-      title: <span className={theme === "dark" ? "text-white" : "text-black"}>MONTH 1-2</span>,
+      title: (
+        <span className={theme === "dark" ? "text-white" : "text-black"}>
+          MONTH 1-2
+        </span>
+      ),
       description: <span id="desc-text">JANUARY-FEBRUARY</span>,
     },
     {
       content: <RoadOne currentStep={1} />,
-      title: <span className={theme === "dark" ? "text-white" : "text-black"}>MONTH 3-4</span>,
+      title: (
+        <span className={theme === "dark" ? "text-white" : "text-black"}>
+          MONTH 3-4
+        </span>
+      ),
       description: <span className="text-blue">JANUARY-FEBRUARY</span>,
     },
     {
       content: <RoadOne currentStep={2} />,
-      title: <span className={theme === "dark" ? "text-white" : "text-black"}>MONTH 5-6</span>,
+      title: (
+        <span className={theme === "dark" ? "text-white" : "text-black"}>
+          MONTH 5-6
+        </span>
+      ),
       description: <span className="text-blue">JANUARY-FEBRUARY</span>,
     },
     {
       content: <RoadOne currentStep={3} />,
-      title: <span className={theme === "dark" ? "text-white" : "text-black"}>MONTH 7-8</span>,
+      title: (
+        <span className={theme === "dark" ? "text-white" : "text-black"}>
+          MONTH 7-8
+        </span>
+      ),
       description: <span className="text-blue">JANUARY-FEBRUARY</span>,
     },
     {
       content: <RoadOne currentStep={4} />,
-      title: <span className={theme === "dark" ? "text-white" : "text-black"}>MONTH 9-10</span>,
+      title: (
+        <span className={theme === "dark" ? "text-white" : "text-black"}>
+          MONTH 9-10
+        </span>
+      ),
       description: <span className="text-blue">JANUARY-FEBRUARY</span>,
     },
   ];
@@ -117,13 +132,13 @@ function useWindowSize() {
         height: window.innerHeight,
       });
     }
-    
+
     // Add event listener
     window.addEventListener("resize", handleResize);
-     
+
     // Call handler right away so state gets updated with initial window size
     handleResize();
-    
+
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
