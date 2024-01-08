@@ -7,13 +7,23 @@ import RoadOne from "../roadmap/road/RoadOne";
 
 const Timeline = () => {
   const [current, setCurrent] = useState(0);
+  let sizeTest = useWindowSize();
+  const [size, setSize] = useState(0);
+  useEffect(() => {
+    return(
+      setSize(sizeTest?.width)
+    )
+  }, [sizeTest]);
   const {theme, setTheme} = useTheme();
-  const [direction, setDirection] = useState(
-    window.innerWidth < 1024 ? "vertical" : "horizontal"
-  );
-  const [verticle, setVerticle] = useState(
-    window.innerWidth < 1024 ? true : false
-  );
+  const [direction, setDirection] = useState("vertical");
+  const [verticle, setVerticle] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      setDirection(size < 1024 ? "vertical" : "horizontal")
+      setVerticle(size < 1024 ? true : false)
+    };
+  }, [size]);
   const steps = [
     {
       content: <RoadOne currentStep={0} />,
@@ -47,8 +57,8 @@ const Timeline = () => {
   };
   useEffect(() => {
     const handleResize = () => {
-      setDirection(window.innerWidth < 1024 ? "vertical" : "horizontal");
-      setVerticle(window.innerWidth < 1024 ? true : false);
+      setDirection(size < 1024 ? "vertical" : "horizontal");
+      setVerticle(size < 1024 ? true : false);
     };
 
     // Add event listener for window resize
@@ -61,10 +71,10 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className={window.innerWidth < 1024 ? "flex space-x-6" : "block"}>
+    <div className={size < 1024 ? "flex space-x-6" : "block"}>
       <Steps
         responsive={false}
-        style={window.innerWidth < 1024 ? { width: "auto" } : { width: "100%" }}
+        style={size < 1024 ? { width: "auto" } : { width: "100%" }}
         current={current}
         progressDot={customDot}
         onChange={handleDotClick}
@@ -89,4 +99,34 @@ const customDot = (dot, _) => (
   </div>
 );
 
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
 export default Timeline;
