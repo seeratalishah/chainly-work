@@ -37,19 +37,24 @@ const webThreeCards = [
 ];
 
 const RoadMap = () => {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
+  const [isWideScreen, setIsWideScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsWideScreen(window.innerWidth >= 1024);
     };
 
-    window.addEventListener('resize', handleResize);
+    // Check if window is defined (client side)
+    if (typeof window !== "undefined") {
+      handleResize();
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
+
   return (
     <div className="p-8  my-12">
       <h1 className="text-4xl font-bold mb-6">Roadmap</h1>

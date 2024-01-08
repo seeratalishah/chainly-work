@@ -6,7 +6,7 @@ const FindWork = () => {
     <div className="relative w-full">
       <img src="/banner.png" alt="" />
       <div className="font-quickSand absolute top-1/2 transform -translate-y-1/2 left-10">
-        <h1 className="banner-text text-md lg:text-4xl md:text-xl sm:text-lg mb-3 text-white">
+        <h1 className="banner-text text-md lg:text-4xl md:text-xl sm:text-lg mb-3 sm:mb-0 text-white">
           With talented freelancers do more work.
         </h1>
         <p className="banner-desc text-xs text-white mb-3">
