@@ -83,21 +83,19 @@ const SliderCard = ({ slides }) => {
                   alt="videoThumbnail"
                 />
               </div>
-              <div className="col-span-2 p-12">
+              <div className="col-span-2 p-4 lg:p-12 md:p-8 sm:p-6">
                 <p
-                  className="mb-4 flex items-center"
+                  className="mb-4 flex items-center text-xs sm:text-sm md:text-md lg:text-2xl"
                   style={{
-                    fontSize: "28px",
                     fontStyle: "normal",
                     fontWeight: 400,
-                    lineHeight: "28px",
                   }}
                 >
                   Tim and Dan Joo, Co-Founders <span className="ml-2 mr-2 font-thin"> | </span>
                   <img src="/reviewLogo.png" alt="reviewLogo" />
                 </p>
 
-                <p className="font-playFair text-4xl leading-[50px]">
+                <p className="font-playFair text-sm sm:text-lg md:text-xl lg:text-4xl">
                   “When you want to create a business bigger than yourself, you
                   need a lot of help. That’s what Fiverr does.”
                 </p>

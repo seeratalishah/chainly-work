@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import Card from "./card/Card";
 import Timeline from "../timeLine/TimeLine";
 
@@ -36,10 +37,23 @@ const webThreeCards = [
 ];
 
 const RoadMap = () => {
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className="p-8  my-12">
       <h1 className="text-4xl font-bold mb-6">Roadmap</h1>
-      <div className="grid grid-cols-5 gap-4 mb-4">
+      <div className={isWideScreen ? "grid grid-cols-5 gap-4 mb-8" : "hidden"}>
         {webThreeCards.map((card) => (
           <Card data={card} />
         ))}

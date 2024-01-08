@@ -5,7 +5,7 @@ import DropdownButton from "../common/DropdownButton";
 
 const MenuBar = () => {
   return (
-    <ul className="flex lg:flex-row flex-col space-y-2 items-center space-x-6 dark:text-gray-200 border-black  font-light">
+    <ul className="flex lg:flex-row flex-col space-y-2 lg:space-y-0 items-center space-x-6 dark:text-gray-200 border-black  font-light">
       <li>
         <Link href="/">Home</Link>
       </li>

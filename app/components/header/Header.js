@@ -38,7 +38,7 @@ const Header = () => {
         alt="logo"
       />
 
-      <div className="lg:block hidden">
+      <div className="lg:flex hidden">
       <MenuBar />
       </div>
       <div className={`block lg:hidden`}>

@@ -1,65 +1,121 @@
 /* styles/globals.css */
 .circle {
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(#bdc3c7, #bdc3c7) 50% 50% no-repeat, #ecf0f1;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 10px;
-    transition: background 0.3s;
-  }
-  
-  .circle.active {
-    background: linear-gradient(#3498db, #2980b9) 50% 50% no-repeat, #ecf0f1;
-  }
-  
-  .content {
-    display: none;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .content.block {
-    display: block;
-  }
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#bdc3c7, #bdc3c7) 50% 50% no-repeat, #ecf0f1;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background 0.3s;
+}
 
-  .ant-steps-item-process .ant-steps-item-icon >.ant-steps-icon .custome-dot{
+.circle.active {
+  background: linear-gradient(#3498db, #2980b9) 50% 50% no-repeat, #ecf0f1;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content.block {
+  display: block;
+}
+
+.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .custome-dot {
+  background: linear-gradient(to right, #3498db, #9b59b6) !important;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50% !important;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .custome-dot,
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon .custome-dot {
+  background-color: silver !important;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50% !important;
+}
+
+.ant-steps.ant-steps-dot .ant-steps-item-tail {
+  top: 15.5px !important;
+  background-color: silver !important;
+}
+
+.outer-dot {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-steps-item-content {
+  margin-left: 50px !important;
+}
+
+.ant-steps
+  .ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-description,
+.ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-description,
+.ant-steps
+  .ant-steps-item-wait
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-description {
+  color: #3eb0ff !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .ant-steps
+    .ant-steps-item-finish
+    > .ant-steps-item-container
+    > .ant-steps-item-tail::after,
+  .ant-steps
+    .ant-steps-item-wait
+    > .ant-steps-item-container
+    > .ant-steps-item-tail::after,
+  .ant-steps
+    .ant-steps-item-process
+    > .ant-steps-item-container
+    > .ant-steps-item-tail::after {
+    background-color: none;
+  }
+}
+@media screen and (min-width: 1023px) {
+    .ant-steps
+  .ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
     background: linear-gradient(to right, #3498db, #9b59b6) !important;
-    width: 25px !important;
-    height: 25px !important;
-    border-radius: 50% !important;
+}
+
+.ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: silver !important;
+}
+
+.ant-steps.ant-steps-dot .ant-steps-item-tail::after{
+    margin-inline-start: 24px !important;
+}
   }
 
-  .ant-steps-item-wait .ant-steps-item-icon >.ant-steps-icon .custome-dot, .ant-steps-item-finish .ant-steps-item-icon >.ant-steps-icon .custome-dot {
-    background-color: silver !important;
-    width: 25px !important;
-    height: 25px !important;
-    border-radius: 50% !important;
-}
 
-.ant-steps.ant-steps-dot .ant-steps-item-tail{
-    top: 15.5px !important;
-    background-color: silver !important;
-}
-
-.outer-dot{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid silver;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-  
-
- 
-  

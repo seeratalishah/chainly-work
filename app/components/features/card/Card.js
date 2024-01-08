@@ -22,7 +22,7 @@ const Card = ({data}) => {
   const updateTheme =
   theme === "dark" ? "bg-[url('/solutionCard.png')] bg-cover" : "border border-solid border-grey rounded-xl"
   return (
-    <div className={`flex flex-col justify-center items-center p-4  h-[340px] ${updateTheme}`}>
+    <div className={`flex flex-col justify-center items-center p-4  h-[340px] rounded-xl ${updateTheme}`}>
       <img className="" src={data.imageUrl} alt={data.title} width={80} height={80}/>
       <div className="p-4">
         <h2 style={h2Style} className="text-md font-bold mb-2 text-center">{data.title}</h2>
