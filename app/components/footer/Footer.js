@@ -305,7 +305,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-10 lg:order-1 order-2">
           <img
             className=" mt-4 lg:mt-0 sm:mt-0 md:mt-0 lg:order-1 md:order-1 sm:order-1 order-2"
-            src={theme === "dark" ? "/darkLogo.png" : "/lightLogo.png"}
+            src={theme === "dark" ? "/darkLogo.png" : "/gradientLogo.png"}
             alt="logo"
           />
           <p className="lg:order-2 md:order-2 sm:order-2 order-1">

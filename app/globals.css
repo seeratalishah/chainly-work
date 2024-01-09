@@ -71,17 +71,29 @@ p {
     z-index: 10;
 }
 
-.bullet-text {
+.bullet-text-dark, .bullet-text-light {
   position: relative;
   padding-left: 20px; /* Adjust this value based on your preference */
   margin-bottom: 4px;
   font-family: 'Quicksand', sans-serif;
 }
 
-.bullet-text::before {
+.bullet-text-dark::before {
   content: "\2022"; /* Unicode character for a bullet point */
   position: absolute;
   left: 0;
   color: white; /* Adjust the color if needed */
   font-size: 20px;
 }
+
+.bullet-text-light::before {
+  content: "\2022"; /* Unicode character for a bullet point */
+  position: absolute;
+  left: 0;
+  background: linear-gradient(to right, #3498db, #8e44ad); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Set text color to transparent */
+  font-size: 20px;
+}
+

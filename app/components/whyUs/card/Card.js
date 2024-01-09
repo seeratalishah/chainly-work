@@ -12,6 +12,7 @@ const Card = ({ data }) => {
     fontStyle: "normal",
     fontWeight: 300,
     lineHeight: "28px",
+    marginBottom: "4px",
   };
 
   const descStyle = {
@@ -39,15 +40,15 @@ const Card = ({ data }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex justify-between items-start">
-        <h2 className="mb-2 text-3xl font-bold">{data.key}</h2>
+        <h2 className="mb-2 text-3xl font-['GilroyBold']">{data.key}</h2>
         {isHovered && <FiArrowUpRight size={24} />}
       </div>
       <div className="flex flex-col space-y-2">
         {data.items.map((item,index) => {
           return (
             <div key={index}>
-              <span style={titleStyle}>{item.title}</span>
-              <span style={descStyle}>{item.desc}</span>
+              <p style={titleStyle} className="font-quicksand">{item.title}</p>
+              <p style={descStyle} className="font-quicksand">{item.desc}</p>
             </div>
           );
         })}

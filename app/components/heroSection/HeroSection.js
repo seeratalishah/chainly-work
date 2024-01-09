@@ -8,12 +8,36 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section w-full h-full">
-      <div className="flex flex-col items-center justify-center">
+      <div className="profile-one">
+        <img src="/one.png" alt="profile" />
+      </div>
+      <div className="profile-two">
+        <img src="/two.png" alt="profile" />
+      </div>
+      <div className="profile-three">
+        <img src="/three.png" alt="profile" />
+      </div>
+      <div className="profile-four">
+        <img src="/four.png" alt="profile" />
+      </div>
+      <div className="profile-eight">
+        <img src="/eight.png" alt="profile" />
+      </div>
+      <div className="profile-seven">
+        <img src="/seven.png" alt="profile" />
+      </div>
+      <div className="profile-six">
+        <img src="/six.png" alt="profile" />
+      </div>
+      <div className="profile-five">
+        <img src="/five.png" alt="profile" />
+      </div>
+      <div className="flex flex-col items-center justify-center z-10">
         <div className="max-w-500 text-center mb-4">
           <h1 className="font-['GilroyBold'] text-[40px] mb-4">
             Join us & Explore Thousands of Freelancers
           </h1>
-          <p className="font-quicksand font-thin mb-4">
+          <p className="font-quicksand mb-4">
             Work with talented people at the most affordable price to get the
             most out of your time and cost
           </p>
@@ -27,10 +51,10 @@ const HeroSection = () => {
             Log in
           </button>
         </div>
-        <p className="mb-6 font-quicksand font-thin">
+        <p className="mb-6 font-quicksand">
           Designer,Developer,Web,IOS,PHP,Senior,Engineer
         </p>
-        <p className="mb-6 text-xs">Trust by the world's best</p>
+        <p className="mb-6 text-xs font-quicksand">Trust by the world's best</p>
         <img
           src={theme === "dark" ? "/darkText.png" : "/lightText.png"}
           alt="logo"

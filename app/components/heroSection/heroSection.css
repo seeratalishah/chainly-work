@@ -3,7 +3,7 @@
 .light .hero-section {
     position: relative;
     height: 100vh;
-    background: url(/hero.png);
+    background: url(/light-hero.png);
     background-size: cover;
     background-position: top;
     display: flex;
@@ -14,11 +14,52 @@
 .dark .hero-section {
     position: relative;
     height: 100vh;
-    background: url(/hero.png);
+    background: url(/dark-hero.png);
     background-size: cover;
     background-position: top;
     display: flex;
     justify-content:center;
     align-items:center;
+}
+
+.profile-one{
+    position: absolute;
+    top: 15%;
+    left: 18%;
+}
+.profile-two{
+    position: absolute;
+    top: 26%;
+    left: 2%;
+}
+.profile-three{
+    position: absolute;
+    top: 55%;
+    left: 4%;
+}
+.profile-four{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+}
+.profile-eight{
+    position: absolute;
+    top: 15%;
+    right: 18%;
+}
+.profile-seven{
+    position: absolute;
+    top: 26%;
+    right: 2%;
+}
+.profile-six{
+    position: absolute;
+    top: 55%;
+    right: 4%;
+}
+.profile-five{
+    position: absolute;
+    top: 80%;
+    right: 6%;
 }
   

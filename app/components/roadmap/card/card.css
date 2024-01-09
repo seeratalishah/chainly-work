@@ -1,3 +1,8 @@
-.glow{
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
+.text-gradient {
+    background: linear-gradient(to right, #3498db, #d20cb8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Set the text color to transparent */
+    font-weight: bold;
+  }
+  
