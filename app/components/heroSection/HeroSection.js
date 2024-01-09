@@ -33,8 +33,8 @@ const HeroSection = () => {
         <img src="/five.png" alt="profile" />
       </div>
       <div className="flex flex-col items-center justify-center absolute">
-        <div className="max-w-500 text-center mb-4">
-          <h1 className="font-['GilroyBold'] text-[40px] mb-4">
+        <div className="max-w-[550px] text-center mb-4">
+          <h1 className="font-['poppins'] text-[40px] mb-4">
             Join us & Explore Thousands of Freelancers
           </h1>
           <p className="font-quicksand mb-4">

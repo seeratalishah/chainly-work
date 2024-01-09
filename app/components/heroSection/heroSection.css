@@ -5,7 +5,7 @@
     height: 100vh;
     background: url(/light-hero.png);
     background-size: cover;
-    background-position: top;
+    background-position: right;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -16,7 +16,7 @@
     height: 100vh;
     background: url(/dark-hero.png);
     background-size: cover;
-    background-position: top;
+    background-position: right;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -25,41 +25,41 @@
 .profile-one{
     position: absolute;
     top: 15%;
-    left: 18%;
+    left: 25%;
 }
 .profile-two{
     position: absolute;
     top: 26%;
-    left: 2%;
+    left: 12%;
 }
 .profile-three{
     position: absolute;
     top: 55%;
-    left: 4%;
+    left: 13%;
 }
 .profile-four{
     position: absolute;
     top: 80%;
-    left: 6%;
+    left: 16%;
 }
 .profile-eight{
     position: absolute;
     top: 15%;
-    right: 18%;
+    right: 25%;
 }
 .profile-seven{
     position: absolute;
     top: 26%;
-    right: 2%;
+    right: 12%;
 }
 .profile-six{
     position: absolute;
     top: 55%;
-    right: 4%;
+    right: 13%;
 }
 .profile-five{
     position: absolute;
     top: 80%;
-    right: 6%;
+    right: 16%;
 }
   

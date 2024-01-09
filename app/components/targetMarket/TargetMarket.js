@@ -5,8 +5,8 @@ const TargetMarket = () => {
     <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row items-center p-8  my-12">
       <img src="/targetMarket.png" alt="image" className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2"/>
       <div className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2">
-        <h1 className="text-4xl font-meduim text-[50px] mb-4">Target Market</h1>
-        <h1 className="text-4xl font-meduim leading-[68px] text-[50px] mb-4">(Business)</h1>
+        <h1 className="text-4xl font-meduim text-[50px] mb-4 max-w-[480px]">Target Market</h1>
+        <h1 className="text-4xl font-meduim leading-[68px] text-[50px] mb-4 max-w-[480px]">(Business)</h1>
         <p className="text-[16px] font-thin bullet-point leading-[28px] ml-10">Businesses with long-term projects.</p>
         <p className="text-[16px] font-thin bullet-point leading-[28px] ml-10">
           Startups and small businesses requiring flexible workforce solutions.

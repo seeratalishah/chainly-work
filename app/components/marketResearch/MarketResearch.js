@@ -4,7 +4,7 @@ const MarketResearch = () => {
   return (
     <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row items-center p-8  my-12">
       <div className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2">
-        <h1 className="text-4xl font-meduim leading-[68px] text-[50px] mb-4">
+        <h1 className="text-4xl font-meduim leading-[68px] text-[50px] mb-4 max-w-[480px]">
           Market Research
         </h1>
         <p className="text-[16px] font-thin leading-[28px]">

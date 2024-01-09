@@ -10,13 +10,13 @@ const Card = ({ data }) => {
   const titleStyle = {
     fontSize: "18px",
     fontStyle: "normal",
-    fontWeight: 300,
+    fontWeight: "bold",
     lineHeight: "28px",
     marginBottom: "4px",
   };
 
   const descStyle = {
-    fontSize: "16px",
+    fontSize: "14px",
     fontStyle: "normal",
     fontWeight: 100,
     lineHeight: "26px",
@@ -34,7 +34,7 @@ const Card = ({ data }) => {
   return (
     <div
       className={`min-h-[350px] ${updateTheme} p-4  rounded-xl transition-all cursor-pointer shadow-sm ${
-        isHovered ? "bg-gradient-to-br from-blue-500 to-purple-500" : ""
+        isHovered ? "bg-gradient-to-br from-blue-500 to-purple-500 text-white" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -47,8 +47,8 @@ const Card = ({ data }) => {
         {data.items.map((item,index) => {
           return (
             <div key={index}>
-              <p style={titleStyle} className="font-quicksand">{item.title}</p>
-              <p style={descStyle} className="font-quicksand">{item.desc}</p>
+              <p style={titleStyle}>{item.title}</p>
+              <p style={descStyle}>{item.desc}</p>
             </div>
           );
         })}

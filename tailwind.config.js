@@ -11,6 +11,8 @@ module.exports = {
       playFair: ["Playfair Display", "serif"],
       quickSand: ["Quicksand", "serif"],
       gilroy: ["Montserrat", "serif"],
+      poppins: ["Poppins", "serif"],
+      openSans: ["Open+Sans", "serif"],
     },
     maxWidth: {
       500: "500px",
