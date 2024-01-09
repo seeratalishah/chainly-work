@@ -32,7 +32,7 @@ const HeroSection = () => {
       <div className="profile-five">
         <img src="/five.png" alt="profile" />
       </div>
-      <div className="flex flex-col items-center justify-center z-10">
+      <div className="flex flex-col items-center justify-center absolute">
         <div className="max-w-500 text-center mb-4">
           <h1 className="font-['GilroyBold'] text-[40px] mb-4">
             Join us & Explore Thousands of Freelancers
