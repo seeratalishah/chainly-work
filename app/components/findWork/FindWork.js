@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 const FindWork = () => {
   return (
     <div className="relative w-full">
-      <img src="/banner.png" alt="" />
+      <img src="/banner.png" alt="" className="w-full" />
       <div className="font-quickSand absolute top-1/2 transform -translate-y-1/2 left-10">
         <h1 className="banner-text text-md lg:text-4xl md:text-xl sm:text-lg mb-3 sm:mb-0 text-white">
           With talented freelancers do more work.

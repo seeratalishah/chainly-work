@@ -56,16 +56,31 @@ p {
   width: 330px;
 }
 
-.bullet-point::before {
-  content: "•";  /* Unicode for a bullet point */
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  font-size: 2em; /* Adjust the font-size as needed for the bullet point size */
-  margin-left: -1em;
-  margin-right: 0.1em; /* Adjust as needed */
-  color: #ffffff; /* Color of the bullet point */
-  vertical-align: middle; /* Align the bullet point with the text */
+.bullet-point-dark, .bullet-point-light{
+  position: relative;
+  padding-left: 20px; /* Adjust this value based on your preference */
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.bullet-point-dark::before {
+  content: "\2022";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 35px;
+    top: -4%;
+}
+
+.bullet-point-light::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  background: linear-gradient(to right, #3498db, #8e44ad); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Set text color to transparent */
+  font-size: 35px;
+  top: -4%;
 }
 
 .slick-prev, .slick-next{
@@ -78,7 +93,7 @@ p {
   position: relative;
   padding-left: 20px; /* Adjust this value based on your preference */
   margin-bottom: 4px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif !important;
 }
 
 .bullet-text-dark::before {
@@ -86,7 +101,7 @@ p {
   position: absolute;
   left: 0;
   color: white; /* Adjust the color if needed */
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .bullet-text-light::before {
@@ -97,6 +112,6 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Set text color to transparent */
-  font-size: 20px;
+  font-size: 25px;
 }
 
