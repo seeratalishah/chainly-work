@@ -1,3 +1,5 @@
+"use client"
+import { useTheme } from "next-themes";
 import Features from "./components/features/Features";
 import FindWork from "./components/findWork/FindWork";
 import HeroSection from "./components/heroSection/HeroSection";
@@ -11,8 +13,15 @@ import TargetFreelance from "./components/targetMarketFreelance/TargetFreelance"
 import Team from "./components/team/Team";
 import WebThreeIntegration from "./components/webThreeIntegration/WebThreeIntegration";
 import WhyUs from "./components/whyUs/WhyUs";
+import { useEffect } from "react";
 
 export default function Home() {
+  const { setTheme } = useTheme();
+
+  // Set the initial theme to 'dark' when the application first renders
+  useEffect(() => {
+    setTheme('dark');
+  }, []);
   return (
     <Layout>
       <HeroSection />
