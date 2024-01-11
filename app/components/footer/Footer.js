@@ -246,7 +246,7 @@ const solutionsLinks = [
 ];
 
 const Footer = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className="footer p-8 mt-10 flex flex-col space-y-10">
       <div className="website-links grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

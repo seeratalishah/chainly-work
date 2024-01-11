@@ -13,7 +13,7 @@ const BulletPoint = ({ text, theme }) => (
 );
 
 const Card = ({ data }) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
   const updateTheme =
   theme === "dark" ? "bg-[url('/web3.png')] bg-cover" : "border border-solid border-grey"

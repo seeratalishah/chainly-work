@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { useTheme } from "next-themes";
 
 const Card = ({ data }) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
 
   const titleStyle = {

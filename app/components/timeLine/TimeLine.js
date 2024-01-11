@@ -12,7 +12,7 @@ const Timeline = () => {
   useEffect(() => {
     return setSize(sizeTest?.width);
   }, [sizeTest?.width]);
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const [direction, setDirection] = useState("vertical");
   const [verticle, setVerticle] = useState(false);
   useEffect(() => {

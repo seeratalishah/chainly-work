@@ -1,4 +1,3 @@
-import { useTheme } from "next-themes";
 import React, { useState } from "react";
 import MenuBar from "../menuBar/MenuBar";
 import Actions from "../actions/Actions";

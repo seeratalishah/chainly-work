@@ -23,7 +23,7 @@ const settings = {
 const SliderCard = ({ slides }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [visible, setVisible] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const playVideo = () => {
     setIsPlaying(true);

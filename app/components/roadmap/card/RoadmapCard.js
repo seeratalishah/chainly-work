@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import "./card.css";
 
 const RoadmapCard = ({ data }) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const updateTheme =
     theme === "dark" ? "col-span-1  bg-[url('/roadmap-card.png')] bg-cover"

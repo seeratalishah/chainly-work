@@ -3,7 +3,7 @@ import React from 'react';
 import { useTheme } from "next-themes";
 
 const Card = ({data}) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const h2Style = {
     textAlign: 'center',

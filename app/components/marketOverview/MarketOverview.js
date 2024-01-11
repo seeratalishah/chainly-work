@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 const MarketOverview = () => {
-    const {theme, setTheme} = useTheme();
+    const {theme} = useTheme();
   return (
     <div className="flex flex-col space-y-10 p-8  my-12">
       <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row">

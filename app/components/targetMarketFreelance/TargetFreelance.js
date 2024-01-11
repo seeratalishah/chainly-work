@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 const TargetFreelance = () => {
-  const {theme, setTheme} = useTheme();
+  const {theme} = useTheme();
   return (
     <div className="flex flex-col sm:flex-row md-flex-row lg-flex-row items-center p-8  my-12">
       <div className="w-full lg:w-1/2 md:w-1/2 sm:w-1/2">

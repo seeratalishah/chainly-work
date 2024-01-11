@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import "./heroSection.css";
 
 const HeroSection = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className="hero-section w-full h-full">

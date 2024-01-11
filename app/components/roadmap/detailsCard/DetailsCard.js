@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 const DetailsCard = ({ data }) => {
-    const {theme, setTheme} = useTheme();
+    const {theme} = useTheme();
   return (
     <div className={`px-4 py-2 flex flex-col space-y-2`}>
       <h2 className="text-sm font-bold font-quicksand">{data.title1}</h2>
