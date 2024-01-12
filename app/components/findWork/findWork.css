@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px){
+    .find-work{
+        background: linear-gradient(to right, #53CCF9, #9E4EF7);
+        border-radius: 10px;
+        height: 240px;
+    }
+    .para-text{
+        width: 200px;
+    }
+}

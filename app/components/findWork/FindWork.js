@@ -1,15 +1,16 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import "./findWork.css";
 
 const FindWork = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full find-work">
       <img src="/banner.png" alt="" className="w-full" />
       <div className="font-quickSand absolute top-1/2 transform -translate-y-1/2 left-10">
         <h1 className="banner-text text-md lg:text-4xl md:text-xl sm:text-lg mb-3 sm:mb-0 text-white">
           With talented freelancers do more work.
         </h1>
-        <p className="banner-desc text-xs text-white mb-3">
+        <p className="banner-desc text-xs text-white mb-3 para-text">
           Work with the largest network of independent professionals and get
           things done—from quick turnarounds.
         </p>

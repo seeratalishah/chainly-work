@@ -248,7 +248,7 @@ const solutionsLinks = [
 const Footer = () => {
   const { theme } = useTheme();
   return (
-    <div className="footer p-8 mt-10 flex flex-col space-y-10">
+    <div className="footer p-8 mt-10 flex flex-col space-y-10 max-w-[1300px]">
       <div className="website-links grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         <div className="links-container flex flex-col space-y-4 text-xs">
           <span className="text-lg font-bold">Categoires</span>
