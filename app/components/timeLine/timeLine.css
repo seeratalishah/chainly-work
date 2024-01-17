@@ -30,6 +30,10 @@
   display: block;
 }
 
+.ant-steps.ant-steps-vertical >.ant-steps-item>.ant-steps-item-container>.ant-steps-item-tail{
+  inset-inline-start: 17px !important;
+}
+
 .ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .custome-dot {
   background: linear-gradient(to right, #3498db, #9b59b6) !important;
   width: 25px !important;
@@ -117,5 +121,6 @@
     margin-inline-start: 24px !important;
 }
   }
+
 
 
