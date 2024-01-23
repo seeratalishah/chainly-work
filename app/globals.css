@@ -17,15 +17,6 @@
 
 
 
-h1,
-h2 {
-  font-family: 'Poppins', sans-serif !important;
-}
-p {
-  margin-top: 0 !important;
-  font-family: 'Open Sans', sans-serif !important;
-}
-
 .light body {
   background: url(/light-bg.jpeg);
   background-size: cover;
